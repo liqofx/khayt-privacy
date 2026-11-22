@@ -97,7 +97,9 @@
   <ul>
     <li><b>شبكة الإعلانات (Unity LevelPlay وشبكاتها الشريكة):</b> تستلم معرّف الإعلانات وبيانات الجهاز لعرض الإعلانات. لها سياسات خصوصية خاصة بها.</li>
     <li><b>Google Play:</b> لمعالجة المشتريات والاشتراكات.</li>
-    <li><b>الاستضافة والخادم:</b> لتخزين التقدّم وتشغيل الاستجواب والمسابقات.</li>
+    <li><b>الاستضافة والخادم (Supabase):</b> لتخزين التقدّم وتشغيل المسابقات، ولعدّ عدد الأسئلة اليومي لكل جهاز. لا نخزّن نص أسئلتك على خادمنا.</li>
+    <li><b>مزوّد الذكاء الاصطناعي (Anthropic):</b> يستلم نص سؤالك والأدلة التي جمعتها وسياق المحادثة عبر خادمنا ليولّد رد المشتبه به. لا نرسل له اسمك ولا بريدك، ولا يصله إلا المعرّف العشوائي للجهاز الذي لا يخرج من خادمنا.</li>
+    <li><b>مزوّد الصوت (ElevenLabs):</b> يستلم نص رد المشتبه به (لا نص سؤالك) ليحوّله إلى صوت.</li>
   </ul>
   <p><b>لا نبيع بياناتك.</b></p>
 </section>
@@ -176,7 +178,9 @@
   <ul>
     <li><b>Ad network (Unity LevelPlay and its partner networks):</b> receives the advertising ID and device data to serve ads. They have their own privacy policies.</li>
     <li><b>Google Play:</b> processes purchases and subscriptions.</li>
-    <li><b>Hosting and server:</b> stores progress and runs interrogations and competitions.</li>
+    <li><b>Hosting and server (Supabase):</b> stores progress, runs competitions, and counts the number of questions per device per day. We do not store the text of your questions on our server.</li>
+    <li><b>AI provider (Anthropic):</b> receives the text of your question, the evidence you have collected and the conversation so far, through our server, to generate the suspect's reply. We do not send your name or email; the random device identifier stays on our server and is not passed on.</li>
+    <li><b>Voice provider (ElevenLabs):</b> receives the text of the suspect's reply (not your question) to turn it into speech.</li>
   </ul>
   <p><b>We do not sell your data.</b></p>
 </section>
